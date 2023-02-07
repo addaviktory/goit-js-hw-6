@@ -12,6 +12,7 @@ const color = function getRandomHexColor() {
 }
 
 btnChangeClr.addEventListener("click", () => {
-  document.body.style.backgroundColor = color()
-  bodyChangeClr.textContent = color()
+  const resultColor = color()
+  document.body.style.backgroundColor = resultColor
+  bodyChangeClr.textContent = resultColor
 });
